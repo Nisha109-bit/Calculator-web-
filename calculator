@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10121d" />
+    <meta name="description" content="A polished, keyboard-friendly calculator built with HTML, CSS, and vanilla JavaScript." />
+    <title>Calculator | SkillCraft Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="SkillCraft Technology home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span>SkillCraft<span class="brand-light">Technology</span></span>
+        </a>
+        <div class="project-tag"><span class="status-dot"></span> INTERNSHIP PROJECT <span class="tag-divider">/</span> 01</div>
+      </header>
+
+      <section class="workspace" aria-labelledby="page-title">
+        <div class="intro">
+          <p class="eyebrow"><span class="eyebrow-line"></span> THE ESSENTIALS, IN BALANCE</p>
+          <h1 id="page-title">A little math.<br /><span>A lot of clarity.</span></h1>
+          <p class="intro-copy">A simple, thoughtful space for the numbers that move your day.</p>
+          <div class="keyboard-note"><span class="keyboard-icon" aria-hidden="true">↵</span><span>Made for the keyboard, too.</span></div>
+        </div>
+
+        <section class="calculator" aria-label="Calculator">
+          <div class="calculator-topline"><span>CALCULATOR</span><span class="power-indicator"><i></i> READY</span></div>
+          <div class="display" aria-live="polite" aria-atomic="true">
+            <div class="expression" id="expression" aria-label="Expression">0</div>
+            <div class="result-row"><span class="result-label" id="result-label">RESULT</span><output class="result" id="result" aria-label="Result">0</output></div>
+            <p class="error-message" id="error-message" role="alert" aria-live="assertive"></p>
+          </div>
+          <div class="keypad" role="group" aria-label="Calculator keys">
+            <button class="key key-utility" data-action="clear" aria-label="Clear all">AC</button>
+            <button class="key key-utility" data-action="backspace" aria-label="Delete last character">⌫</button>
+            <button class="key key-operator" data-value="%" aria-label="Remainder">%</button>
+            <button class="key key-operator" data-value="÷" aria-label="Divide">÷</button>
+
+            <button class="key" data-value="7">7</button>
+            <button class="key" data-value="8">8</button>
+            <button class="key" data-value="9">9</button>
+            <button class="key key-operator" data-value="×" aria-label="Multiply">×</button>
+
+            <button class="key" data-value="4">4</button>
+            <button class="key" data-value="5">5</button>
+            <button class="key" data-value="6">6</button>
+            <button class="key key-operator" data-value="−" aria-label="Subtract">−</button>
+
+            <button class="key" data-value="1">1</button>
+            <button class="key" data-value="2">2</button>
+            <button class="key" data-value="3">3</button>
+            <button class="key key-operator" data-value="+" aria-label="Add">+</button>
+
+            <button class="key key-sign" data-action="sign" aria-label="Toggle sign">+/−</button>
+            <button class="key" data-value="0">0</button>
+            <button class="key" data-value="." aria-label="Decimal point">.</button>
+            <button class="key key-equals" data-action="equals" aria-label="Equals">=</button>
+          </div>
+          <div class="calculator-footer"><span>Safe expression parsing</span><span class="footer-separator">·</span><span>Keyboard supported</span></div>
+        </section>
+      </section>
+
+      <footer class="page-footer"><span>SKILLCRAFT TECHNOLOGY</span><span class="footer-center">BUILT TO KEEP THINGS SIMPLE</span><span>HTML <b>·</b> CSS <b>·</b> JS</span></footer>
+    </main>
+  </body>
+</html>
